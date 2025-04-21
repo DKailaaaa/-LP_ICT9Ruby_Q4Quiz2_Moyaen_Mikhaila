@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Score Analyzer</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+	<style>
+
+	div {margin: auto;
+	width: 50%;
+	padding:2px;
+	text-align: center;}
+
+	body{background-color:#ccd5ae}
+
+	span {color: #588157}
+
+</style>
+</head>
+<body>
+
+<div class="container mt-5 text-center" style="color: #2f3e46; font-family: Georgia;">
+	<h1 style="color: #3a5a40; font-size: 50px; float: center;"><b>Score Analyzer</i></b></h1>
+<details>
+  <summary style="color: #52796f; font-size: 30px">Click Me!</summary>
+  <span"><i>Enter your grades in the following subjects:</i></span>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<img src="Math.jpg" style="height: 300px; width: 200px">
+<img src="Science.jpg" style="height: 300px; width: 200px">
+<img src="English.jpg" style="height: 300px; width: 200px">
+<br>
+<input type="number" id="MathInt" placeholder="Input Grades">
+<input type="number" id="ScienceInt" placeholder="Input Grades">
+<input type="number" id="EnglishInt" placeholder="Input Grades">
+<br>
+<button onclick="findAverage()"> Get Average </button>
+
+<h2 id="result"> </h2>
+
+</div>
+
+<br>
+<br>
+
+<script>
+
+	function findAverage() {
+
+	let math = parseInt(document.getElementById("MathInt").value);
+	let science = parseInt(document.getElementById("ScienceInt").value);
+	let english = parseInt(document.getElementById("EnglishInt").value);
+
+	var average = (math + science+ english)/3; =
+
+
+
+
+	switch (average){
+
+	case 75: 
+		gradesScore = "Needs Improvement";
+		break;
+
+	case 76: 
+		gradesScore = "Needs Improvement";
+		break;
+
+	case 77: 
+		gradesScore = "Needs Improvement";
+		break;
+
+	case 78: 
+		gradesScore = "Needs Improvement";
+		break;
+
+	case 79: 
+		gradesScore = "Needs Improvement";
+		break;
+
+	case 80: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 81: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 82: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 83: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 84: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 85: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 86: 
+		gradesScore = "Satisfactory";
+		break;
+
+	case 87: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 88: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 89: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 90: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 91: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 92: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 93: 
+		gradesScore = "Above Satisfactory";
+		break;
+
+	case 94: 
+		gradesScore = "Excellent";
+		break;
+
+	case 95: 
+		gradesScore = "Excellent";
+		break;
+
+	case 96: 
+		gradesScore = "Excellent";
+		break;
+
+	case 97: 
+		gradesScore = "Excellent";
+		break;
+
+	case 98: 
+		gradesScore = "Excellent";
+		break;
+
+	case 99: 
+		gradesScore = "Excellent";
+		break;
+
+	case 100: 
+		gradesScore = "Excellent";
+		break;
+
+
+
+	default:
+		gradesScore = "Invalid Input!"; }
+
+
+		document.getElementById("result").innerHTML= "Your Average is:" + Math.round(average) + gradesScore;
+
+}
+</script>
+
+
+
+
+
+</body>
+</html>
